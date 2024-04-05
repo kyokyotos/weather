@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background: url(imgs/8150248.jpg );
+}
+
+.card{
+  width: 90%;
+  position: relative;
+  max-width: 400px;
+  height: 555px;
+  background: rgba(255, 255, 255, .1);
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(255, 255, 255, .2);
+  color: white;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+.search{
+  position: relative;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search i{
+  position: absolute;
+  left: 10px;
+  font-size: 28 px;
+}
+
+
+.search input{
+  position:absolute;
+  width:100%;
+  height: 100%;
+  background: transparent;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid rgba(255, 255, 255, .2);
+  text-transform: uppercase;
+  padding: 0 48px 0 42px;
+}
+
+
+.search input::placeholder {
+  color: white;
+  text-transform: capitalize;
+}
+
+
+.search button{
+  position: absolute;
+  right: 0;
+  width: 40px;
+  background: transparent;
+  border: none;
+  outline:none;
+  color: #ebfffc;
+  font-size: 28px;
+  padding: 0 40px 0 5px;
+  cursor: pointer;
+}
+
+.search button img{
+  width:16px;
+}
+
+.weather-icon{
+  width: 170px;
+  margin-top: 30px ;
+}
+
+.weather h1{
+  font-size: 64px;
+  font-weight: 700;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.weather h2{
+  font-size: 45px;
+  font-weight: 600;
+  margin-top: -10px;
+  text-transform: uppercase;
+}
+
+.details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.col{
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.col img{
+  width: 40px;
+  margin-right: 10px;
+}
+
+.humidity, .wind{
+  font-size:28px ;
+  margin-top: -10px;
+}
+
+.weather{
+  display:none;
+}
+
+.error h1{
+  font-size: 14px ;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: none;
+}
+
+.error p{
+  font-size: 8px ;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: none;
+}
+
+.error img{
+  width: 60%;
+  display: none;
+  align-items: center;
+}
+
